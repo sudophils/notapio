@@ -45,7 +45,8 @@ module.exports = {
      ***************************************************************************/
     default: {
       adapter: "sails-mongo",
-      url: "mysql://user:password@host:port/database"
+      url:
+        "mongodb://heroku_vgnq0twt:q85cs5qjfn1q5ajvaq13tifhva@ds239359.mlab.com:39359/heroku_vgnq0twt",
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -66,7 +67,7 @@ module.exports = {
        * https://sailsjs.com/config/datastores                                     *
        *                                                                           *
        ****************************************************************************/
-      // ssl: true,
+      ssl: true
     }
   },
 
@@ -132,9 +133,9 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    cors: {
-      allowOrigins: ["http://127.0.0.1:1337"]
-    }
+    // cors: {
+    //   allowOrigins: ["http://127.0.0.1:1337"]
+    // }
   },
 
   /***************************************************************************
