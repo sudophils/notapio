@@ -45,8 +45,7 @@ module.exports = {
      ***************************************************************************/
     default: {
       adapter: "sails-mongo",
-      url:
-        "mongodb://heroku_vgnq0twt:q85cs5qjfn1q5ajvaq13tifhva@ds239359.mlab.com:39359/heroku_vgnq0twt",
+      url: process.env.MONGODB_URI,
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -107,7 +106,8 @@ module.exports = {
    *                                                                         *
    ***************************************************************************/
   blueprints: {
-    shortcuts: false
+    shortcuts: true,
+    rest: true
   },
 
   /***************************************************************************
@@ -134,7 +134,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cors: {
-      allowOrigins: ["https://notapia.herokuapp.com"]
+      // allowOrigins: ["https://notapia.herokuapp.com"]
     }
   },
 
