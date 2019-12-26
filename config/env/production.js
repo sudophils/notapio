@@ -45,7 +45,7 @@ module.exports = {
      ***************************************************************************/
     default: {
       adapter: "sails-mongo",
-      url: process.env.MONGODB_URI,
+      url: process.env.MONGODB_URI
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -66,7 +66,7 @@ module.exports = {
        * https://sailsjs.com/config/datastores                                     *
        *                                                                           *
        ****************************************************************************/
-      ssl: true
+      // ssl: true
     }
   },
 
@@ -106,7 +106,7 @@ module.exports = {
    *                                                                         *
    ***************************************************************************/
   blueprints: {
-    shortcuts: true,
+    shortcuts: false,
     rest: true
   },
 
@@ -199,7 +199,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cookie: {
-      secure: true,
+      secure: false,
       maxAge: 24 * 60 * 60 * 1000 // 24 hours
     }
   },
@@ -285,7 +285,7 @@ module.exports = {
      * (https://sailsjs.com/config/http)                                        *
      *                                                                          *
      ***************************************************************************/
-    // trustProxy: true,
+    // trustProxy: true
   },
 
   /**************************************************************************
