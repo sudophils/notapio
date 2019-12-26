@@ -133,9 +133,9 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    // cors: {
-    //   allowOrigins: ["http://127.0.0.1:1337"]
-    // }
+    cors: {
+      allowOrigins: ["https://notapia.herokuapp.com"]
+    }
   },
 
   /***************************************************************************
@@ -224,7 +224,7 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    // onlyAllowOrigins: ["http://127.0.0.1:1337"]
+    onlyAllowOrigins: ["https://notapia.herokuapp.com"]
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *
