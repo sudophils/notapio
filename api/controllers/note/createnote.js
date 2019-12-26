@@ -9,7 +9,7 @@ module.exports = async function createNote(req, res) {
   const noteTitle = req.param("noteTitle");
   const noteText = req.param("noteText");
   const noteDate = req.param("noteDate");
-  const noteTime = req.param("noteTime");
+  const noteTime = req.param("noteTime"); 
 
   const note = await Note.create({
     noteTitle,
