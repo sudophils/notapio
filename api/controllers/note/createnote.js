@@ -21,5 +21,5 @@ module.exports = async function createNote(req, res) {
   if (!note) {
     return res.status(400).json({ error: "could not create note" });
   }
-  return res.json(note);
+  return res.status(200).json({status:'saved successfully',data:note});
 };
