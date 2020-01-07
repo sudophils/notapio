@@ -6,9 +6,7 @@
  */
 
 module.exports = async function getNotes(req, res) {
-  const allNotes = await Note.find()
-    .fetch()
-    .sort("createdAt DESC");
+  const allNotes = await Note.find().fetch();
   if (!allNotes) {
     return res.status(404).json({ error: "could not retrieve notes" });
   }
