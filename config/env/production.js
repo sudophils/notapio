@@ -45,9 +45,9 @@ module.exports = {
      ***************************************************************************/
     default: {
       adapter: "sails-mongo",
-      // url: process.env.MONGODB_URI,
-      url:
-        "mongodb:heroku_zwc2wzz7:rhj9rcipcli2sa2tnfboe4k339@ds247178.mlab.com:47178/heroku_zwc2wzz7",
+      url: process.env.MONGODB_URI,
+      // url:
+      //   "mongodb:heroku_zwc2wzz7:rhj9rcipcli2sa2tnfboe4k339@ds247178.mlab.com:47178/heroku_zwc2wzz7",
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.

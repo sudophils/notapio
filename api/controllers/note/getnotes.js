@@ -10,5 +10,5 @@ module.exports = async function getNotes(req, res) {
   if (!allNotes) {
     return res.status(404).json({ error: "could not retrieve notes" });
   }
-  return res.status(200).json(allNotes);
+  return allNotes;
 };
